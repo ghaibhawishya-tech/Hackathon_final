@@ -116,7 +116,7 @@ class ModelRouterEnv:
         
     def _get_info(self) -> Info:
         return Info(
-            score=calculate_score(self.task, self.chosen_model, self.action_history) if self.done else 0.0,
+            score=calculate_score(self.task, self.chosen_model, self.action_history),
             step_rewards=self.step_rewards,
             final_choice=self.chosen_model,
             route_justification=self.route_justification
