@@ -1,0 +1,13 @@
+version: "2.0"
+environment:
+  name: "model_router_openenv"
+  type: "python"
+  components:
+    - name: "model_router"
+      entrypoint: "model_router_openenv.environment:ModelRouterEnv"
+      observation_model: "model_router_openenv.models:Observation"
+      action_model: "model_router_openenv.actions:Action"
+      info_model: "model_router_openenv.models:Info"
+  metadata:
+    description: "A real-world AI inference routing simulator balancing cost, quality, latency, and risk."
+    author: "User"
