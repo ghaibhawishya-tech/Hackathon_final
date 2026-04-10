@@ -11,3 +11,20 @@ environment:
   metadata:
     description: "A real-world AI inference routing simulator balancing cost, quality, latency, and risk."
     author: "User"
+
+tasks:
+  - id: "easy_001"
+    name: "Easy Grammar Check"
+    description: "Fix the basic spelling errors in a provided paragraph."
+    difficulty: "easy"
+    grader: "model_router_openenv.graders:grade"
+  - id: "medium_001"
+    name: "Medium Scripting"
+    description: "Write a mid-sized Python script with error handling."
+    difficulty: "medium"
+    grader: "model_router_openenv.graders:grade"
+  - id: "hard_001"
+    name: "Hard Medical Synthesis"
+    description: "Synthesize diagnostics ensuring absolute HIPAA de-identification."
+    difficulty: "hard"
+    grader: "model_router_openenv.graders:grade"
